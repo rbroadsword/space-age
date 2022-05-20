@@ -9,8 +9,9 @@ describe("Universe", () => {
   }); 
 
   test('should correctly tell you your age on Mercury', () => {
-    const myAge = new Universe(30, 100, 70); 
-    expect(myAge.mercuryAge()).toEqual(125); 
+    const myAge = new Universe(30, 100, 70);
+    myAge.mercuryAge(); 
+    expect(myAge.ageOnMercury).toEqual(125); 
   }); 
 
   test('should correctly calculate your age on venus', () => {

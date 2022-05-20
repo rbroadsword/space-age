@@ -11,7 +11,7 @@ export default class Universe {
 
   mercuryAge() {
     let ageOnMercury = Math.round(this.age / .24); 
-    return ageOnMercury; 
+    this.ageOnMercury = ageOnMercury; 
   }
 
   venusAge() {
