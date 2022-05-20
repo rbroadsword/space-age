@@ -13,7 +13,7 @@ describe("Universe", () => {
     expect(myAge.mercuryAge()).toEqual(125); 
   }); 
 
-  test('should correctly calculate age on venus', () => {
+  test('should correctly calculate myAge earth', () => {
     const myAge = new Universe(30, 100); 
     expect(myAge.venusAge()).toEqual(48); 
   });
@@ -27,4 +27,9 @@ describe("Universe", () => {
     const myAge = new Universe(30, 100); 
     expect(myAge.jupiterAge()).toEqual(3); 
   }); 
+
+  test('should correctly calculate life expectancy on mercury', () => {
+    const myAge = new Universe(30, 100); 
+    expect(myAge.ageOnMercury()).toEqual(417); 
+  })
 }); 
