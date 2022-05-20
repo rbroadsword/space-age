@@ -1,8 +1,12 @@
 export default class Universe {
-  constructor(age, lifeExpectancy, lifeLeft){
+  constructor(age, lifeExpectancy){
     this.age = age; 
-    this.lifeExpectancy = lifeExpectancy; 
-    this.lifeLeft = lifeExpectancy - age; 
+    this.lifeExpectancy = lifeExpectancy;
+    this.lifeLeft = this.lifeExpectancy - this.age; 
+    this.ageOnMercury = 0; 
+    this.ageOnVenus = 0; 
+    this.ageOnMars = 0; 
+    this.ageOnJupiter = 0; 
   }
 
   mercuryAge() {
@@ -25,22 +29,22 @@ export default class Universe {
       return ageOnJupiter; 
     }
 
-    lifeExpectancyOnMercury() {
+    lifeLeftOnMercury() {
       let expectancyOnMercury = Math.round(this.lifeExpectancy / .24); 
       return expectancyOnMercury; 
     }
 
-    lifeExpectancyOnVenus() {
+    lifeLeftOnVenus() {
       let expectancyOnVenus = Math.round(this.lifeExpectancy / .62); 
       return expectancyOnVenus; 
     }
 
-    lifeExpectancyOnMars() {
+    lifeLeftOnMars() {
       let expectancyOnMars = Math.round(this.lifeExpectancy / 1.88); 
       return expectancyOnMars; 
     }
 
-    lifeExpectancyOnJupiter() {
+    lifeLeftOnJupiter() {
       let expectancyOnJupiter = Math.round(this.lifeExpectancy / 11.86); 
       return expectancyOnJupiter; 
     }
