@@ -17,4 +17,9 @@ describe("Universe", () => {
     const myAge = new Universe(30, 100); 
     expect(myAge.venusAge()).toEqual(48); 
   });
+
+  test('should correctly calculate age on mars', () => {
+    const myAge = new Universe(30, 100); 
+    expect(myAge.marsAge()).toEqual(16); 
+  })
 }); 
