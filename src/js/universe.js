@@ -26,7 +26,7 @@ export default class Universe {
 
     jupiterAge() {
       let ageOnJupiter = Math.round(this.age / 11.86); 
-      return ageOnJupiter; 
+      this.ageOnJupiter =  ageOnJupiter; 
     }
 
     lifeLeftOnMercury() {
