@@ -56,4 +56,10 @@ describe("Universe", () => {
     expect(myAge.lifeLeftOnJupiter()).toEqual(97); 
   }); 
 
+  test('should tell user if they have lived past their life expectancy on mercury and return years lived past', () => {
+    const myAge = new Universe(30, 100); 
+    myAge.mercuryAge(); 
+    expect(myAge.lifeLeftOnMercury()).toEqual(25); 
+  })
+
 }); 
