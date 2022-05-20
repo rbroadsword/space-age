@@ -16,7 +16,7 @@ export default class Universe {
 
   venusAge() {
       let ageOnVenus = Math.round(this.age / .62); 
-      return ageOnVenus; 
+      this.ageOnVenus = ageOnVenus; 
     }
 
     marsAge() {
