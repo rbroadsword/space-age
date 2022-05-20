@@ -4,5 +4,9 @@ export default class Universe {
     this.lifeExpectancy = lifeExpectancy; 
     this.lifeLeft = lifeExpectancy - age; 
   }
-  
+
+  mercuryAge() {
+    let ageOnMercury = Math.floor(this.age / .24); 
+    return ageOnMercury; 
+  }
 }
