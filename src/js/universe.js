@@ -39,4 +39,10 @@ export default class Universe {
       console.log(expectancyOnVenus); 
       return expectancyOnVenus; 
     }
+
+    lifeExpectancyOnMars() {
+      let expectancyOnMars = Math.round(this.lifeExpectancy / 1.88); 
+      console.log(expectancyOnMars); 
+      return expectancyOnMars; 
+    }
   }
