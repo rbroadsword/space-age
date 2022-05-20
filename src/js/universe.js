@@ -6,13 +6,19 @@ export default class Universe {
   }
 
   mercuryAge() {
-    let ageOnMercury = Math.floor(this.age / .24); 
+    let ageOnMercury = Math.round(this.age / .24); 
     return ageOnMercury; 
   }
 
   venusAge() {
-      let ageOnVenus = Math.floor(this.age / .62); 
+      let ageOnVenus = Math.round(this.age / .62); 
       console.log(ageOnVenus); 
       return ageOnVenus; 
+    }
+
+    marsAge() {
+      let ageOnMars = Math.round(this.age / 1.88); 
+      console.log(ageOnMars); 
+      return ageOnMars; 
     }
   }
