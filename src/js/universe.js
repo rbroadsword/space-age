@@ -45,4 +45,10 @@ export default class Universe {
       console.log(expectancyOnMars); 
       return expectancyOnMars; 
     }
+
+    lifeExpectancyOnJupiter() {
+      let expectancyOnJupiter = Math.round(this.lifeExpectancy / 11.86); 
+      console.log(expectancyOnJupiter); 
+      return expectancyOnJupiter; 
+    }
   }
