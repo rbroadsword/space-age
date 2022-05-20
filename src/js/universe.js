@@ -30,22 +30,22 @@ export default class Universe {
     }
 
     lifeLeftOnMercury() {
-      let expectancyOnMercury = Math.round(this.lifeExpectancy / .24); 
-      return expectancyOnMercury; 
+      let leftOnMercury = this.lifeExpectancy - this.ageOnMercury; 
+      return leftOnMercury; 
     }
 
     lifeLeftOnVenus() {
-      let expectancyOnVenus = Math.round(this.lifeExpectancy / .62); 
-      return expectancyOnVenus; 
+      let leftOnVenus = this.lifeExpectancy - this.ageOnVenus; 
+      return leftOnVenus; 
     }
 
     lifeLeftOnMars() {
-      let expectancyOnMars = Math.round(this.lifeExpectancy / 1.88); 
-      return expectancyOnMars; 
+      let leftOnMars = this.lifeExpectancy - this.ageOnMars; 
+      return leftOnMars; 
     }
 
     lifeLeftOnJupiter() {
-      let expectancyOnJupiter = Math.round(this.lifeExpectancy / 11.86); 
-      return expectancyOnJupiter; 
+      let leftOnJupiter = this.lifeExpectancy - this.ageOnJupiter; 
+      return leftOnJupiter; 
     }
   }

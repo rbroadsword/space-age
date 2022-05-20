@@ -32,24 +32,28 @@ describe("Universe", () => {
     expect(myAge.ageOnJupiter).toEqual(3); 
   }); 
 
-  test('should correctly calculate life expectancy on mercury', () => {
+  test('should correctly calculate life left on mercury', () => {
     const myAge = new Universe(30, 100); 
-    expect(myAge.lifeLeftOnMercury()).toEqual(417); 
+    myAge.mercuryAge();
+    expect(myAge.lifeLeftOnMercury()).toEqual(-25); 
   }); 
 
-  test('should correctly calculate life expectancy on venus', () => {
+  test('should correctly calculate life left on venus', () => {
     const myAge = new Universe(30, 100); 
-    expect(myAge.lifeLeftOnVenus()).toEqual(161); 
+    myAge.venusAge(); 
+    expect(myAge.lifeLeftOnVenus()).toEqual(52); 
   });
 
-  test('should correctly calculate life expectancy on mars', () => {
+  test('should correctly calculate life left on mars', () => {
     const myAge = new Universe(30, 100); 
-    expect(myAge.lifeLeftOnMars()).toEqual(53); 
+    myAge.marsAge(); 
+    expect(myAge.lifeLeftOnMars()).toEqual(84); 
   }); 
 
-  test('should correctly calculate life expectancy on jupiter', () => {
-    const myAge = new Universe(30, 100); 
-    expect(myAge.lifeLeftOnJupiter()).toEqual(8); 
+  test('should correctly calculate life left on jupiter', () => {
+    const myAge = new Universe(30, 100);
+    myAge.jupiterAge(); 
+    expect(myAge.lifeLeftOnJupiter()).toEqual(97); 
   }); 
 
 }); 
