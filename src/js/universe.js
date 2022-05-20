@@ -27,4 +27,10 @@ export default class Universe {
       console.log(ageOnJupiter); 
       return ageOnJupiter; 
     }
+
+    lifeExpectancyOnMercury() {
+      let expectancyOnMercury = Math.round(this.lifeExpectancy / .24); 
+      console.log(expectancyOnMercury); 
+      return expectancyOnMercury; 
+    }
   }
