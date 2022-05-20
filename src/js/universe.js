@@ -21,4 +21,10 @@ export default class Universe {
       console.log(ageOnMars); 
       return ageOnMars; 
     }
+
+    jupiterAge() {
+      let ageOnJupiter = Math.round(this.age / 11.86); 
+      console.log(ageOnJupiter); 
+      return ageOnJupiter; 
+    }
   }
