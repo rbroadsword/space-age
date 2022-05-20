@@ -4,4 +4,5 @@ export default class Universe {
     this.lifeExpectancy = lifeExpectancy; 
     this.lifeLeft = lifeExpectancy - age; 
   }
+  
 }
