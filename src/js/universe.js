@@ -66,7 +66,14 @@ export default class Universe {
     }
 
     lifeLeftOnJupiter() {
+      let yearsLeftToLive; 
       let leftOnJupiter = this.lifeExpectancy - this.ageOnJupiter; 
-      return leftOnJupiter; 
-    }
+      if (Math.sign(leftOnJupiter) === 1 ) {
+        yearsLeftToLive = leftOnJupiter; 
+        return yearsLeftToLive;  
+      } else {
+        yearsLeftToLive = leftOnJupiter * -1; 
+        return yearsLeftToLive; 
+      } 
   }
+}

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1653104191134" clover="3.2.0">
-  <project timestamp="1653104191134" name="All files">
-    <metrics statements="35" coveredstatements="35" conditionals="6" coveredconditionals="6" methods="9" coveredmethods="9" elements="50" coveredelements="50" complexity="0" loc="35" ncloc="35" packages="1" files="1" classes="1"/>
+<coverage generated="1653104471976" clover="3.2.0">
+  <project timestamp="1653104471976" name="All files">
+    <metrics statements="39" coveredstatements="39" conditionals="8" coveredconditionals="8" methods="9" coveredmethods="9" elements="56" coveredelements="56" complexity="0" loc="39" ncloc="39" packages="1" files="1" classes="1"/>
     <file name="universe.js" path="/Users/RB/Desktop/space-age/src/js/universe.js">
-      <metrics statements="35" coveredstatements="35" conditionals="6" coveredconditionals="6" methods="9" coveredmethods="9"/>
-      <line num="3" count="12" type="stmt"/>
-      <line num="4" count="12" type="stmt"/>
-      <line num="5" count="12" type="stmt"/>
-      <line num="6" count="12" type="stmt"/>
-      <line num="7" count="12" type="stmt"/>
-      <line num="8" count="12" type="stmt"/>
-      <line num="9" count="12" type="stmt"/>
+      <metrics statements="39" coveredstatements="39" conditionals="8" coveredconditionals="8" methods="9" coveredmethods="9"/>
+      <line num="3" count="13" type="stmt"/>
+      <line num="4" count="13" type="stmt"/>
+      <line num="5" count="13" type="stmt"/>
+      <line num="6" count="13" type="stmt"/>
+      <line num="7" count="13" type="stmt"/>
+      <line num="8" count="13" type="stmt"/>
+      <line num="9" count="13" type="stmt"/>
       <line num="13" count="3" type="stmt"/>
       <line num="14" count="3" type="stmt"/>
       <line num="18" count="3" type="stmt"/>
       <line num="19" count="3" type="stmt"/>
       <line num="23" count="3" type="stmt"/>
       <line num="24" count="3" type="stmt"/>
-      <line num="28" count="2" type="stmt"/>
-      <line num="29" count="2" type="stmt"/>
+      <line num="28" count="3" type="stmt"/>
+      <line num="29" count="3" type="stmt"/>
       <line num="34" count="2" type="stmt"/>
       <line num="35" count="2" type="cond" truecount="2" falsecount="0"/>
       <line num="36" count="1" type="stmt"/>
@@ -37,8 +37,12 @@
       <line num="61" count="1" type="stmt"/>
       <line num="63" count="1" type="stmt"/>
       <line num="64" count="1" type="stmt"/>
-      <line num="69" count="1" type="stmt"/>
-      <line num="70" count="1" type="stmt"/>
+      <line num="70" count="2" type="stmt"/>
+      <line num="71" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="72" count="1" type="stmt"/>
+      <line num="73" count="1" type="stmt"/>
+      <line num="75" count="1" type="stmt"/>
+      <line num="76" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
