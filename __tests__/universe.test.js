@@ -45,7 +45,7 @@ describe("Universe", () => {
   }); 
 
   test('should tell user if they have lived past their life expectancy on venus and return years left to live', () => {
-    const myAge = new Universe(30, 150); 
+    const myAge = new Universe(30, 100); 
     myAge.venusAge(); 
     expect(myAge.lifeLeftOnVenus()).toEqual(52); 
   });

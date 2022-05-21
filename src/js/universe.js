@@ -42,8 +42,15 @@ export default class Universe {
     }
 
     lifeLeftOnVenus() {
+      let yearsLeftToLive; 
       let leftOnVenus = this.lifeExpectancy - this.ageOnVenus; 
-      return leftOnVenus; 
+      if (Math.sign(leftOnVenus) === 1 ) {
+        yearsLeftToLive = leftOnVenus; 
+        return yearsLeftToLive;  
+      } else {
+        yearsLeftToLive = leftOnVenus * -1; 
+        return yearsLeftToLive; 
+      } 
     }
 
     lifeLeftOnMars() {
