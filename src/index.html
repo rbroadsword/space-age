@@ -12,6 +12,35 @@
       <h1>SPACE AGE</h1>
       <p>Enter your age and life expectancy below to see how old you are on other planets!</p>
     </header>
+  
+    <div class="main">
+      <form id="userInput">
+        <div class="form-group">
+          <label for="age">Enter your age:</label>
+          <input type="number" id="userAge" required>
+        </div>
+        <div class="form-group">
+          <label for="lifeExpectancy">What's your life expectancy?</label>
+          <input type="number" id="userLifeExpectancy" required>
+        </div>
+
+        <button type="submit" class="btn-outline-success">Submit</button>
+      </form>
+    </div>
+    <div class="results">
+      <div class="mercury">
+        <h3>Your Age on Mercury: <span class="mercury-age"></span></h3>
+      </div>
+      <div class="venus">
+        <h3>Your Age on Venus: <span class="venus-age"></span></h3>
+      </div>
+      <div class="mars">
+        <h3>Your Age on Mars: <span class="mars-age"></span></h3>
+      </div>
+      <div class="jupiter">
+        <h3>Your Age on Jupiter: <span class="jupiter-age"></span></h3>
+      </div>
+    </div>
   </div>
 </body>
 </html>
