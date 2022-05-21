@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1653104471976" clover="3.2.0">
-  <project timestamp="1653104471976" name="All files">
+<coverage generated="1653163290816" clover="3.2.0">
+  <project timestamp="1653163290816" name="All files">
     <metrics statements="39" coveredstatements="39" conditionals="8" coveredconditionals="8" methods="9" coveredmethods="9" elements="56" coveredelements="56" complexity="0" loc="39" ncloc="39" packages="1" files="1" classes="1"/>
     <file name="universe.js" path="/Users/RB/Desktop/space-age/src/js/universe.js">
       <metrics statements="39" coveredstatements="39" conditionals="8" coveredconditionals="8" methods="9" coveredmethods="9"/>
