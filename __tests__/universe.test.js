@@ -9,7 +9,7 @@ describe("Universe", () => {
   }); 
 
   test('should correctly tell you your age on Mercury', () => {
-    const myAge = new Universe(30, 100, 70);
+    const myAge = new Universe(30, 100);
     myAge.mercuryAge(); 
     expect(myAge.ageOnMercury).toEqual(125); 
   }); 
@@ -32,10 +32,16 @@ describe("Universe", () => {
     expect(myAge.ageOnJupiter).toEqual(3); 
   }); 
 
-  test('should correctly calculate life left on mercury', () => {
-    const myAge = new Universe(30, 100); 
+  test('should tell user if they have lived past their life expectancy on mercury and return years left to live', () => {
+    const myAge = new Universe(30, 150); 
     myAge.mercuryAge();
-    expect(myAge.lifeLeftOnMercury()).toEqual(-25); 
+    expect(myAge.lifeLeftOnMercury()).toEqual(25); 
+  }); 
+
+  test('should tell user if they have lived past their life expectancy on mercury and return years lived past', () => {
+    const myAge = new Universe(30, 100); 
+    myAge.mercuryAge(); 
+    expect(myAge.lifeLeftOnMercury()).toEqual(25); 
   }); 
 
   test('should correctly calculate life left on venus', () => {
@@ -55,11 +61,5 @@ describe("Universe", () => {
     myAge.jupiterAge(); 
     expect(myAge.lifeLeftOnJupiter()).toEqual(97); 
   }); 
-
-  test('should tell user if they have lived past their life expectancy on mercury and return years lived past', () => {
-    const myAge = new Universe(30, 100); 
-    myAge.mercuryAge(); 
-    expect(myAge.lifeLeftOnMercury()).toEqual(25); 
-  })
 
 }); 
