@@ -9,14 +9,12 @@ import './css/styles.css';
 $(function () {
   $('#userInput').on('submit', function (event) {
     event.preventDefault(); 
-    $('#userInput').hide(); 
+    $('.main').hide(); 
     $('.results').show(); 
     const userAge = parseInt($('#userAge').val()); 
     const userLifeExpectancy = parseInt($('#userLifeExpectancy').val()); 
 
     const myAge = new Universe(userAge, userLifeExpectancy); 
-
-    console.log(myAge); 
 
     let ageOnMercury = myAge.mercuryAge(); 
     let ageOnVenus = myAge.venusAge(); 

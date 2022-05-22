@@ -6,7 +6,6 @@
 body {
   color: silver;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flex; 
   min-height: 100vh;
   background-image: url("../assets/img/prawn-nebula-1638085867.jpg");
   background-position: center;
@@ -41,7 +40,36 @@ body {
   padding: .5rem;
   margin: .5rem;
 }
-
 .results {
   display: none;
+  min-height: 60vh;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: black;
+}
+.mercury, .venus, .mars, .jupiter {
+  margin: 1rem;
+  padding: 1.5rem;
+}
+.neonText {
+  color: #fff;
+  text-shadow:
+    0 0 21px #fff,
+    0 0 42px #AAF0D1,
+    0 0 82px #AAF0D1,
+    0 0 92px #AAF0D1,
+    0 0 102px #AAF0D1,
+    0 0 151px #AAF0D1;
+}
+.border {
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem  #AAF0D1,
+              0 0 0.8rem #AAF0D1,
+              0 0 2.8rem #AAF0D1,
+              inset 0 0 1.3rem #AAF0D1;
 }

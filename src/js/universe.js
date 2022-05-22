@@ -11,29 +11,33 @@ export default class Universe {
 
   mercuryAge() {
     let ageOnMercury = Math.round(this.age / .24); 
-    this.ageOnMercury = ageOnMercury; 
+    this.ageOnMercury = ageOnMercury;
+    return ageOnMercury;  
   }
 
   venusAge() {
       let ageOnVenus = Math.round(this.age / .62); 
       this.ageOnVenus = ageOnVenus; 
+      return ageOnVenus; 
     }
 
     marsAge() {
       let ageOnMars = Math.round(this.age / 1.88); 
       this.ageOnMars = ageOnMars; 
+      return ageOnMars; 
     }
 
     jupiterAge() {
       let ageOnJupiter = Math.round(this.age / 11.86); 
       this.ageOnJupiter =  ageOnJupiter; 
+      return ageOnJupiter; 
     }
 
     lifeLeftOnMercury() {
       let yearsLeftToLive; 
       let leftOnMercury = this.lifeExpectancy - this.ageOnMercury; 
       if (Math.sign(leftOnMercury) === -1 ) {
-        yearsLeftToLive = leftOnMercury * -1; 
+        yearsLeftToLive = leftOnMercury; 
         return yearsLeftToLive;  
       } else {
         yearsLeftToLive = leftOnMercury; 
@@ -45,7 +49,7 @@ export default class Universe {
       let yearsLeftToLive; 
       let leftOnVenus = this.lifeExpectancy - this.ageOnVenus; 
       if (Math.sign(leftOnVenus) === -1 ) {
-        yearsLeftToLive = leftOnVenus * -1; 
+        yearsLeftToLive = leftOnVenus; 
         return yearsLeftToLive;  
       } else {
         yearsLeftToLive = leftOnVenus; 
@@ -57,7 +61,7 @@ export default class Universe {
       let yearsLeftToLive; 
       let leftOnMars = this.lifeExpectancy - this.ageOnMars; 
       if (Math.sign(leftOnMars) === -1 ) {
-        yearsLeftToLive = leftOnMars * -1; 
+        yearsLeftToLive = leftOnMars; 
         return yearsLeftToLive;  
       } else {
         yearsLeftToLive = leftOnMars; 
@@ -69,7 +73,7 @@ export default class Universe {
       let yearsLeftToLive; 
       let leftOnJupiter = this.lifeExpectancy - this.ageOnJupiter; 
       if (Math.sign(leftOnJupiter) === -1 ) {
-        yearsLeftToLive = leftOnJupiter * -1; 
+        yearsLeftToLive = leftOnJupiter; 
         return yearsLeftToLive;  
       } else {
         yearsLeftToLive = leftOnJupiter; 
