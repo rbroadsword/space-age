@@ -58,9 +58,7 @@ The business logic of your application should take a person's age in years and c
 
 ## Known Bugs
 
-* UI is incomplete
-* Styling yet to be completed
-
+* if user has lived past expected age, it gives a negative number.
 
 ## License
 
