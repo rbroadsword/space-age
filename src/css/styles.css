@@ -44,9 +44,10 @@ body {
 .results {
   display: none;
   min-height: 60vh;
+  max-width: 50vw;
   text-align: center;
   padding: 2rem;
-  margin: 2rem;
+  margin: auto;
   background-color: black;
 }
 .mercury, .venus, .mars, .jupiter {
@@ -93,4 +94,7 @@ body {
               0 0 0.8rem #AAF0D1,
               0 0 2.8rem #AAF0D1,
               inset 0 0 1.3rem #AAF0D1;
+}
+footer {
+  min-height: 10vh;
 }
