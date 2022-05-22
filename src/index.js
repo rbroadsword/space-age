@@ -10,6 +10,7 @@ $(function () {
   $('#userInput').on('submit', function (event) {
     event.preventDefault(); 
     $('#userInput').hide(); 
+    $('.results').show(); 
     const userAge = parseInt($('#userAge').val()); 
     const userLifeExpectancy = parseInt($('#userLifeExpectancy').val()); 
 
@@ -29,5 +30,14 @@ $(function () {
 
     $('.mercury-age').html(ageOnMercury); 
     $('.mercury-life-left').html(lifeLeftMercury); 
+
+    $('.venus-age').html(ageOnVenus); 
+    $('.venus-life-left').html(lifeLeftVenus); 
+
+    $('.mars-age').html(ageOnMars); 
+    $('.mars-life-left').html(lifeLeftMars); 
+
+    $('.jupiter-age').html(ageOnJupiter); 
+    $('.jupiter-life-left').html(lifeLeftJupiter)
   })
 }) 
