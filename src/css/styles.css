@@ -37,7 +37,8 @@ body {
   font-size: 1.25rem;
 }
 .ui {
-  padding: .5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   margin: .5rem;
 }
 .results {
@@ -61,6 +62,26 @@ body {
     0 0 92px #AAF0D1,
     0 0 102px #AAF0D1,
     0 0 151px #AAF0D1;
+}
+.neonTextBlizz {
+  color: silver;
+  text-shadow:
+    0 0 21px #50BFE6,
+    0 0 42px #50BFE6,
+    0 0 82px #50BFE6,
+    0 0 92px #50BFE6,
+    0 0 102px #50BFE6,
+    0 0 151px #50BFE6;
+}
+.neonTextRoja {
+  color: #fff;
+  text-shadow:
+    0 0 21px #FF355E,
+    0 0 42px #FF355E,
+    0 0 82px #FF355E,
+    0 0 92px #FF355E,
+    0 0 102px #FF355E,
+    0 0 151px #FF355E;
 }
 .border {
   border: 0.2rem solid #fff;
