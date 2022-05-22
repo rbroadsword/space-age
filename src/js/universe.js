@@ -16,68 +16,68 @@ export default class Universe {
   }
 
   venusAge() {
-      let ageOnVenus = Math.round(this.age / .62); 
-      this.ageOnVenus = ageOnVenus; 
-      return ageOnVenus; 
-    }
+    let ageOnVenus = Math.round(this.age / .62); 
+    this.ageOnVenus = ageOnVenus; 
+    return ageOnVenus; 
+  }
 
-    marsAge() {
-      let ageOnMars = Math.round(this.age / 1.88); 
-      this.ageOnMars = ageOnMars; 
-      return ageOnMars; 
-    }
+  marsAge() {
+    let ageOnMars = Math.round(this.age / 1.88); 
+    this.ageOnMars = ageOnMars; 
+    return ageOnMars; 
+  }
 
-    jupiterAge() {
-      let ageOnJupiter = Math.round(this.age / 11.86); 
-      this.ageOnJupiter =  ageOnJupiter; 
-      return ageOnJupiter; 
-    }
+  jupiterAge() {
+    let ageOnJupiter = Math.round(this.age / 11.86); 
+    this.ageOnJupiter =  ageOnJupiter; 
+    return ageOnJupiter; 
+  }
 
-    lifeLeftOnMercury() {
-      let yearsLeftToLive; 
-      let leftOnMercury = this.lifeExpectancy - this.ageOnMercury; 
-      if (Math.sign(leftOnMercury) === -1 ) {
-        yearsLeftToLive = leftOnMercury; 
-        return yearsLeftToLive;  
-      } else {
-        yearsLeftToLive = leftOnMercury; 
-        return yearsLeftToLive; 
-      }
+  lifeLeftOnMercury() {
+    let yearsLeftToLive; 
+    let leftOnMercury = this.lifeExpectancy - this.ageOnMercury; 
+    if (Math.sign(leftOnMercury) === -1 ) {
+      yearsLeftToLive = leftOnMercury; 
+      return yearsLeftToLive;  
+    } else {
+      yearsLeftToLive = leftOnMercury; 
+      return yearsLeftToLive; 
     }
+  }
 
-    lifeLeftOnVenus() {
-      let yearsLeftToLive; 
-      let leftOnVenus = this.lifeExpectancy - this.ageOnVenus; 
-      if (Math.sign(leftOnVenus) === -1 ) {
-        yearsLeftToLive = leftOnVenus; 
-        return yearsLeftToLive;  
-      } else {
-        yearsLeftToLive = leftOnVenus; 
-        return yearsLeftToLive; 
-      } 
-    }
+  lifeLeftOnVenus() {
+    let yearsLeftToLive; 
+    let leftOnVenus = this.lifeExpectancy - this.ageOnVenus; 
+    if (Math.sign(leftOnVenus) === -1 ) {
+      yearsLeftToLive = leftOnVenus; 
+      return yearsLeftToLive;  
+    } else {
+      yearsLeftToLive = leftOnVenus; 
+      return yearsLeftToLive; 
+    } 
+  }
 
-    lifeLeftOnMars() {
-      let yearsLeftToLive; 
-      let leftOnMars = this.lifeExpectancy - this.ageOnMars; 
-      if (Math.sign(leftOnMars) === -1 ) {
-        yearsLeftToLive = leftOnMars; 
-        return yearsLeftToLive;  
-      } else {
-        yearsLeftToLive = leftOnMars; 
-        return yearsLeftToLive; 
-      } 
-    }
+  lifeLeftOnMars() {
+    let yearsLeftToLive; 
+    let leftOnMars = this.lifeExpectancy - this.ageOnMars; 
+    if (Math.sign(leftOnMars) === -1 ) {
+      yearsLeftToLive = leftOnMars; 
+      return yearsLeftToLive;  
+    } else {
+      yearsLeftToLive = leftOnMars; 
+      return yearsLeftToLive; 
+    } 
+  }
 
-    lifeLeftOnJupiter() {
-      let yearsLeftToLive; 
-      let leftOnJupiter = this.lifeExpectancy - this.ageOnJupiter; 
-      if (Math.sign(leftOnJupiter) === -1 ) {
-        yearsLeftToLive = leftOnJupiter; 
-        return yearsLeftToLive;  
-      } else {
-        yearsLeftToLive = leftOnJupiter; 
-        return yearsLeftToLive; 
-      } 
+  lifeLeftOnJupiter() {
+    let yearsLeftToLive; 
+    let leftOnJupiter = this.lifeExpectancy - this.ageOnJupiter; 
+    if (Math.sign(leftOnJupiter) === -1 ) {
+      yearsLeftToLive = leftOnJupiter; 
+      return yearsLeftToLive;  
+    } else {
+      yearsLeftToLive = leftOnJupiter; 
+      return yearsLeftToLive; 
+    } 
   }
 }

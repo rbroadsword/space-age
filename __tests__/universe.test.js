@@ -41,7 +41,7 @@ describe("Universe", () => {
   test('should tell user if they have lived past their life expectancy on mercury and return years lived past', () => {
     const myAge = new Universe(30, 100); 
     myAge.mercuryAge(); 
-    expect(myAge.lifeLeftOnMercury()).toEqual(25); 
+    expect(myAge.lifeLeftOnMercury()).toEqual(-25); 
   }); 
 
   test('should tell user if they have lived past their life expectancy on venus and return years left to live', () => {
@@ -53,7 +53,7 @@ describe("Universe", () => {
   test('should tell user if they have lived past their life expectancy on venus and return years lived past', () => {
     const myAge = new Universe(30, 40); 
     myAge.venusAge(); 
-    expect(myAge.lifeLeftOnVenus()).toEqual(8); 
+    expect(myAge.lifeLeftOnVenus()).toEqual(-8); 
   }); 
 
   test('should tell user if they have lived past their life expectancy on mars and return years left to live', () => {
@@ -65,7 +65,7 @@ describe("Universe", () => {
   test('should tell user if they have lived past their life expectancy on mars and return years lived past', () => {
     const myAge = new Universe(30, 10); 
     myAge.marsAge(); 
-    expect(myAge.lifeLeftOnMars()).toEqual(6); 
+    expect(myAge.lifeLeftOnMars()).toEqual(-6); 
   }); 
 
   test('should tell user if they have lived past their life expectancy on jupiter and return years left to live', () => {
@@ -77,7 +77,7 @@ describe("Universe", () => {
   test('should tell user if they have lived past their life expectancy on jupiter and return years lived past', () => {
     const myAge = new Universe(30, 1); 
     myAge.jupiterAge(); 
-    expect(myAge.lifeLeftOnJupiter()).toEqual(2); 
+    expect(myAge.lifeLeftOnJupiter()).toEqual(-2); 
   });
 
 }); 

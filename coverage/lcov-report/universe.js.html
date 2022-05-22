@@ -24,7 +24,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>39/39</span>
+                <span class='fraction'>43/43</span>
             </div>
         
             
@@ -45,7 +45,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>39/39</span>
+                <span class='fraction'>43/43</span>
             </div>
         
             
@@ -134,7 +134,11 @@
 <a name='L76'></a><a href='#L76'>76</a>
 <a name='L77'></a><a href='#L77'>77</a>
 <a name='L78'></a><a href='#L78'>78</a>
-<a name='L79'></a><a href='#L79'>79</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-yes">13x</span>
@@ -148,19 +152,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -225,70 +233,74 @@
 &nbsp;
   mercuryAge() {
     let ageOnMercury = Math.round(this.age / .24); 
-    this.ageOnMercury = ageOnMercury; 
+    this.ageOnMercury = ageOnMercury;
+    return ageOnMercury;  
   }
 &nbsp;
   venusAge() {
-      let ageOnVenus = Math.round(this.age / .62); 
-      this.ageOnVenus = ageOnVenus; 
-    }
+    let ageOnVenus = Math.round(this.age / .62); 
+    this.ageOnVenus = ageOnVenus; 
+    return ageOnVenus; 
+  }
 &nbsp;
-    marsAge() {
-      let ageOnMars = Math.round(this.age / 1.88); 
-      this.ageOnMars = ageOnMars; 
-    }
+  marsAge() {
+    let ageOnMars = Math.round(this.age / 1.88); 
+    this.ageOnMars = ageOnMars; 
+    return ageOnMars; 
+  }
 &nbsp;
-    jupiterAge() {
-      let ageOnJupiter = Math.round(this.age / 11.86); 
-      this.ageOnJupiter =  ageOnJupiter; 
-    }
+  jupiterAge() {
+    let ageOnJupiter = Math.round(this.age / 11.86); 
+    this.ageOnJupiter =  ageOnJupiter; 
+    return ageOnJupiter; 
+  }
 &nbsp;
-    lifeLeftOnMercury() {
-      let yearsLeftToLive; 
-      let leftOnMercury = this.lifeExpectancy - this.ageOnMercury; 
-      if (Math.sign(leftOnMercury) === -1 ) {
-        yearsLeftToLive = leftOnMercury * -1; 
-        return yearsLeftToLive;  
-      } else {
-        yearsLeftToLive = leftOnMercury; 
-        return yearsLeftToLive; 
-      }
+  lifeLeftOnMercury() {
+    let yearsLeftToLive; 
+    let leftOnMercury = this.lifeExpectancy - this.ageOnMercury; 
+    if (Math.sign(leftOnMercury) === -1 ) {
+      yearsLeftToLive = leftOnMercury; 
+      return yearsLeftToLive;  
+    } else {
+      yearsLeftToLive = leftOnMercury; 
+      return yearsLeftToLive; 
     }
+  }
 &nbsp;
-    lifeLeftOnVenus() {
-      let yearsLeftToLive; 
-      let leftOnVenus = this.lifeExpectancy - this.ageOnVenus; 
-      if (Math.sign(leftOnVenus) === -1 ) {
-        yearsLeftToLive = leftOnVenus * -1; 
-        return yearsLeftToLive;  
-      } else {
-        yearsLeftToLive = leftOnVenus; 
-        return yearsLeftToLive; 
-      } 
-    }
+  lifeLeftOnVenus() {
+    let yearsLeftToLive; 
+    let leftOnVenus = this.lifeExpectancy - this.ageOnVenus; 
+    if (Math.sign(leftOnVenus) === -1 ) {
+      yearsLeftToLive = leftOnVenus; 
+      return yearsLeftToLive;  
+    } else {
+      yearsLeftToLive = leftOnVenus; 
+      return yearsLeftToLive; 
+    } 
+  }
 &nbsp;
-    lifeLeftOnMars() {
-      let yearsLeftToLive; 
-      let leftOnMars = this.lifeExpectancy - this.ageOnMars; 
-      if (Math.sign(leftOnMars) === -1 ) {
-        yearsLeftToLive = leftOnMars * -1; 
-        return yearsLeftToLive;  
-      } else {
-        yearsLeftToLive = leftOnMars; 
-        return yearsLeftToLive; 
-      } 
-    }
+  lifeLeftOnMars() {
+    let yearsLeftToLive; 
+    let leftOnMars = this.lifeExpectancy - this.ageOnMars; 
+    if (Math.sign(leftOnMars) === -1 ) {
+      yearsLeftToLive = leftOnMars; 
+      return yearsLeftToLive;  
+    } else {
+      yearsLeftToLive = leftOnMars; 
+      return yearsLeftToLive; 
+    } 
+  }
 &nbsp;
-    lifeLeftOnJupiter() {
-      let yearsLeftToLive; 
-      let leftOnJupiter = this.lifeExpectancy - this.ageOnJupiter; 
-      if (Math.sign(leftOnJupiter) === -1 ) {
-        yearsLeftToLive = leftOnJupiter * -1; 
-        return yearsLeftToLive;  
-      } else {
-        yearsLeftToLive = leftOnJupiter; 
-        return yearsLeftToLive; 
-      } 
+  lifeLeftOnJupiter() {
+    let yearsLeftToLive; 
+    let leftOnJupiter = this.lifeExpectancy - this.ageOnJupiter; 
+    if (Math.sign(leftOnJupiter) === -1 ) {
+      yearsLeftToLive = leftOnJupiter; 
+      return yearsLeftToLive;  
+    } else {
+      yearsLeftToLive = leftOnJupiter; 
+      return yearsLeftToLive; 
+    } 
   }
 }</pre></td></tr></table></pre>
 
@@ -297,7 +309,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat May 21 2022 13:01:30 GMT-0700 (Pacific Daylight Time)
+                at Sat May 21 2022 20:54:14 GMT-0700 (Pacific Daylight Time)
             </div>
         </div>
         <script src="prettify.js"></script>

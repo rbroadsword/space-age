@@ -36,6 +36,6 @@ $(function () {
     $('.mars-life-left').html(lifeLeftMars); 
 
     $('.jupiter-age').html(ageOnJupiter); 
-    $('.jupiter-life-left').html(lifeLeftJupiter)
-  })
-}) 
+    $('.jupiter-life-left').html(lifeLeftJupiter); 
+  }); 
+}); 
